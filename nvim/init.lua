@@ -1,6 +1,0 @@
-print("RBK editor is online")
-require("config.rbk")
-require("config.lazy")
-require("config.theme")
-require("config.grapple")
-require("config.treesitter")
