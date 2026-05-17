@@ -1,3 +1,3 @@
 local autoclose = require("autoclose")
 
-autoclose.setup()
+--autoclose.setup()
