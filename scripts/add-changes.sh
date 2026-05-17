@@ -1,5 +1,6 @@
 #!/bin/sh
 
 echo "Adding changes to the repo folders"
-# cp -ur ../.config/nvim ../nvim
-cp -ur ../.config/test ../test
+# rsync -av ~/.config/test/ ~/projects/personal/dotfiles/test/
+#
+rsync -av ~/.config/nvim/ ~/projects/personal/dotfiles/nvim/
