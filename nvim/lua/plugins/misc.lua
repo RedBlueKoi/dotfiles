@@ -1,4 +1,6 @@
 return {
+  { "m4xshen/autoclose.nvim", opts = {} },
+  { "mrded/nvim-launchpad" },
   {
     "folke/trouble.nvim",
     opts = {},
@@ -36,8 +38,6 @@ return {
       },
     }
   },
-  { "m4xshen/autoclose.nvim", opts = {} },
-  { "mrded/nvim-launchpad" },
   {
     "folke/todo-comments.nvim",
     dependencies = {
