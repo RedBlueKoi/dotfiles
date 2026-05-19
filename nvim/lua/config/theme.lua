@@ -12,7 +12,7 @@ rosepine.setup({
     migrations = true, -- Handle deprecated options automatically
   },
 
-  styles = { 
+  styles = {
     bold = true,
     italic = true,
     transparency = true,
@@ -50,39 +50,37 @@ rosepine.setup({
   },
 
   palette = {
-    -- Override the builtin palette per variant
-    -- moon = {
-      --     base = '#18191a',
-      --     overlay = '#363738',
-      -- },
-    },
+  -- Override the builtin palette per variant
+  -- moon = {
+    --     base = '#18191a',
+    --     overlay = '#363738',
+    -- },
+  },
 
-    -- NOTE: Highlight groups are extended (merged) by default. Disable this
-    -- per group via `inherit = false`
-    highlight_groups = {
-      -- Comment = { fg = "foam" },
-      -- StatusLine = { fg = "love", bg = "love", blend = 15 },
-      -- VertSplit = { fg = "muted", bg = "muted" },
-      -- Visual = { fg = "base", bg = "text", inherit = false },
-    },
+  -- NOTE: Highlight groups are extended (merged) by default. Disable this
+  -- per group via `inherit = false`
+  highlight_groups = {
+    -- Comment = { fg = "foam" },
+    -- StatusLine = { fg = "love", bg = "love", blend = 15 },
+    -- VertSplit = { fg = "muted", bg = "muted" },
+    -- Visual = { fg = "base", bg = "text", inherit = false },
+  },
 
-    before_highlight = function(group, highlight, palette)
-      -- Disable all undercurls
-      -- if highlight.undercurl then
-      --     highlight.undercurl = false
-      -- end
-      --
-      -- Change palette colour
-      -- if highlight.fg == palette.pine then
-      --     highlight.fg = palette.foam
-      -- end
-    end,
+  before_highlight = function(group, highlight, palette)
+    -- Disable all undercurls
+    -- if highlight.undercurl then
+    --     highlight.undercurl = false
+    -- end
+    --
+    -- Change palette colour
+    -- if highlight.fg == palette.pine then
+    --     highlight.fg = palette.foam
+    -- end
+  end
 })
 
 vim.cmd("colorscheme rose-pine")
--- vim.cmd("colorscheme rose-pine-main")
--- vim.cmd("colorscheme rose-pine-moon")
--- vim.cmd("colorscheme rose-pine-dawn")
+
 vim.api.nvim_set_hl(0, 'Normal', { bg = "none" })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "none" })
 vim.api.nvim_set_hl(0, 'FloatBorder', { bg = "none" })

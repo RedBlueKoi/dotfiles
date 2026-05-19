@@ -9,7 +9,6 @@ local serverMap = {
   "vue_ls",
   "eslint",
   "tailwindcss",
-  "prettierd"
 }
 masonConfig.setup({
   automatic_enable = false,
