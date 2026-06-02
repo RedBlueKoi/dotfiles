@@ -47,6 +47,7 @@ vim.keymap.set('n', '<leader>re', '<cmd>restart<cr>', { desc = "Restart Nvim" })
 vim.keymap.set('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = "Call Lazy UI" })
 vim.keymap.set('n', '<leader>ma', '<cmd>Mason<cr>', { desc = "Call Mason UI" })
 vim.keymap.set('n', '<leader>lp', '<cmd>Launchpad<cr>', { desc = "Call Launchpad" })
+vim.keymap.set('n', '<leader>fa', '<cmd>LspEslintFixAll<cr>', { desc = "Fix all fixable LSP errors" })
 -- vim.keymap.set('n', '<leader>xa', '<cmd><cr>', { desc = "Show all inline diagnostic" })
 
 -- Allow usage of a global clipboard

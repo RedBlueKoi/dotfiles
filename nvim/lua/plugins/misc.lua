@@ -1,4 +1,22 @@
 return {
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
   -- { "m4xshen/autoclose.nvim", opts = {} },
   {
     "nvim-mini/mini.pairs",
@@ -25,7 +43,7 @@ return {
     cmd = "Trouble",
     keys = {
       {
-        "<leader>xx",
+        "<leader>tt",
         "<cmd>Trouble diagnostics toggle<cr>",
         desc = "Diagnostics (Trouble)",
       },
@@ -40,8 +58,8 @@ return {
         desc = "Symbols (Trouble)",
       },
       {
-        "<leader>cl",
-        "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+        "<leader>td",
+        "<cmd>Trouble lsp toggle focus=true win.position=left<cr>",
         desc = "LSP Definitions / references / ... (Trouble)",
       },
       {

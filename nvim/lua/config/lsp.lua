@@ -17,7 +17,6 @@ masonConfig.setup({
 
 vim.lsp.enable(serverMap)
 
--- TODO: vue ls screams that it requires ts_ls even when ts_ls is present
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 for _,v in ipairs(serverMap) do
   vim.lsp.config(v, { capabilities = capabilities })
