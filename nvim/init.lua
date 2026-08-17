@@ -1,15 +1,10 @@
 -- Plugins
+-- Lazy has to go first to load everything else
 require("config.lazy")
-
 -- Config
-require("config.rbk")
+-- For plugins that require extensive config each in a separate file
 require("config.theme")
-require("config.telescope")
-require("config.lsp")
-require("config.cmp")
-require("config.harpoon")
-require("config.launchpad")
-require("config.tree-sitter")
---
--- Disabled
--- require("config.diagnostics")
+-- Personal overrides
+-- Changes to native NVim config and custom keymaps for plugins
+require("rbk.keymap")
+require("rbk.config")
