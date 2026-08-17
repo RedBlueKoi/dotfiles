@@ -23,7 +23,7 @@ vim.opt.sidescrolloff = 8
 vim.opt.autoread = true
 
 -- Vertical columns in the editor
-vim.opt.colorcolumn = "80,100"
+vim.opt.colorcolumn = "100"
 
 -- Indent
 vim.opt.shiftwidth = 2
@@ -42,6 +42,7 @@ vim.opt.incsearch = true
 -- Misc keybindings
 vim.keymap.set('n', '<leader>pv',  '<cmd>Explore<cr>', { desc = "Explore to the netrw" })
 vim.keymap.set('n', '<leader>re', '<cmd>restart<cr>', { desc = "Restart Nvim" })
+vim.keymap.set('n', '<leader>qw', '<cmd>q!<cr>', { desc = "Exit with save" })
 
 -- Plugin call keybindings
 vim.keymap.set('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = "Call Lazy UI" })
