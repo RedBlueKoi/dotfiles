@@ -8,8 +8,11 @@ vim.g.maplocalleader = '\\'
 -- Default netrw list style
 -- vim.g.netrw_liststyle = 3
 
--- Consistent line numbers in netrw
+--Consistent line numbers in netrw
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
+-- Use nvim-tree instead
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 -- Basic settings
 vim.opt.number = true
@@ -39,19 +42,6 @@ vim.opt.smartcase = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
--- Misc keybindings
-vim.keymap.set('n', '<leader>pv',  '<cmd>Explore<cr>', { desc = "Explore to the netrw" })
-vim.keymap.set('n', '<leader>re', '<cmd>restart<cr>', { desc = "Restart Nvim" })
-vim.keymap.set('n', '<leader>qw', '<cmd>q!<cr>', { desc = "Exit with save" })
-
--- Plugin call keybindings
-vim.keymap.set('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = "Call Lazy UI" })
-vim.keymap.set('n', '<leader>ma', '<cmd>Mason<cr>', { desc = "Call Mason UI" })
-vim.keymap.set('n', '<leader>lp', '<cmd>Launchpad<cr>', { desc = "Call Launchpad" })
-vim.keymap.set('n', '<leader>fa', '<cmd>LspEslintFixAll<cr>', { desc = "Fix all fixable LSP errors" })
--- vim.keymap.set('n', '<leader>xa', '<cmd><cr>', { desc = "Show all inline diagnostic" })
-
 -- Allow usage of a global clipboard
 vim.opt.clipboard:append({ 'unnamed', 'unnamedplus' })
-vim.diagnostic.enable()
--- vim.keymap.set('n', '<leader>aa', vim.diagnostic.open_float())
+-- vim.diagnostic.enable()
