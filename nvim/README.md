@@ -1,13 +1,19 @@
 # An opinionated nvim config
 
-### Implemented:
-- [+] Lazy plugin manager
-- [+] Mason LSP manager
-- [+] Default theme
+### Features:
+| Implemented | Feature | Plugin |
+| :---------: | ------- | ------ |
+| [+] | Plugin manager | LazyNvim |
+| [+] | LSP manager | Mason |
+| [+] | Markdown rendering | render-markdown |
+| [+] | Theme | Rose Pine |
+| [ ] | TypeScript type preview | |
+| [ ] | TypeScript two slash query | |
+| [ ] | Project file tree-view | |
+| [ ] | Git Intergration | |
+| [ ] | Launchpad with local config | |
 
-### TODOs:
-- git integration with git blame and commit references
-- project file tree-view
-- TypeScript type preview
-- launchpad with a local config
-- plugin clean up
+### LSP Enabled:
+- Typescript
+- Javascript
+- HTML
