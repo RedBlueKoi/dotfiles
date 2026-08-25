@@ -21,6 +21,7 @@ vim.opt.cursorline = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 8
+vim.opt.winborder = 'rounded'
 
 -- Reload buffer when edited outside
 vim.opt.autoread = true

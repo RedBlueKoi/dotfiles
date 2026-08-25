@@ -1,16 +1,12 @@
 return {
+  { "windwp/nvim-ts-autotag", opts = {} },
   {
-    "folke/which-key.nvim",
+    "rachartier/tiny-inline-diagnostic.nvim",
     event = "VeryLazy",
-    opts = {},
-    keys = {
-      {
-        "<leader>?",
-        function()
-          require("which-key").show({ global = false })
-        end,
-        desc = "Buffer Local Keymaps (which-key)",
-      },
-    },
+    priority = 1000,
+    config = function()
+      require('tiny-inline-diagnostic').setup()
+      vim.diagnostic.config({ virtual_text = false }) -- Disable Neovim's default virtual text diagnostics
+    end,
   },
 }

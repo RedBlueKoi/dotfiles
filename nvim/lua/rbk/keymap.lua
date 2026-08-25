@@ -1,5 +1,6 @@
 -- Misc keybindings
 vim.keymap.set('n', '<leader>pv',  '<cmd>Explore<cr>', { desc = "Explore to the netrw" })
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, { desc = "Language format" })
 vim.keymap.set('n', '<leader>re', '<cmd>restart<cr>', { desc = "Restart Nvim" })
 vim.keymap.set('n', '<leader>ww', '<cmd>exit<cr>', { desc = "Exit Nvim" })
 
