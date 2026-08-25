@@ -9,12 +9,13 @@ return {
         "vue_ls",
         "eslint",
         "tailwindcss",
-      }
+      },
+      automatic_enable = true
     },
-    -- config = function()
-    --   local capabilities = require('cmp_nvim_lsp').default_capabilities()
-    --   vim.lsp.config('*', { capabilities = capabilities })
-    -- end,
+    config = function()
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
+      vim.lsp.config('*', { capabilities = capabilities })
+    end,
     dependencies = {
       "neovim/nvim-lspconfig",
       {

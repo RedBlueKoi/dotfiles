@@ -1,6 +1,3 @@
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
--- vim.lsp.config('*', { capabilities = capabilities })
-
 vim.lsp.config.lua_ls = {
   settings = {
     Lua = {
@@ -49,3 +46,12 @@ local tsserver_config = {}
 vim.lsp.config('vtsls', vtsls_config)
 vim.lsp.config('vue_ls', vue_ls_config)
 vim.lsp.config('tsserver', tsserver_config)
+
+vim.lsp.enable({
+  "lua_ls",
+  "vtsls",
+  -- "tsgo" -- new faster alternative https://github.com/microsoft/typescript-go
+  "vue_ls",
+  "eslint",
+  "tailwindcss"
+})

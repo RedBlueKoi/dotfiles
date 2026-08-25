@@ -4,9 +4,6 @@ require("config.lazy")
 -- Config
 -- For plugins that require extensive config each in a separate file
 require("config.theme")
--- Additional CMP configs
--- cause autocomplete is hard
--- require("config.cmp")
 -- Additional LSP configs
 require("config.lsp")
 -- Personal overrides
