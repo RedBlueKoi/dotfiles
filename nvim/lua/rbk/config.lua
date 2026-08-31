@@ -23,6 +23,10 @@ vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 8
 vim.opt.winborder = 'rounded'
 
+-- Spell checker
+vim.opt.spell = true
+vim.opt.spelllang = 'en_us'
+
 -- Reload buffer when edited outside
 vim.opt.autoread = true
 

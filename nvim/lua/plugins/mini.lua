@@ -6,7 +6,7 @@ return {
     config = function()
       require('mini.ai').setup()
       -- Animation plugin disabled(sad)
-      -- due to issues when scolling the screen on the touchpad
+      -- due to issues when scrolling the screen on the touch pad
       -- require('mini.animate').setup()
       require('mini.align').setup()
       require('mini.move').setup({

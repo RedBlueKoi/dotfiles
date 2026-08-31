@@ -7,7 +7,7 @@
 | [+]         | LSP manager                 | Mason           |
 | [+]         | Markdown rendering          | render-markdown |
 | [+]         | Theme                       | Rose Pine       |
-| [ ]         | TypeScript type preview     |                 |
+| [+]         | TypeScript type preview     |                 |
 | [ ]         | TypeScript two slash query  |                 |
 | [ ]         | Project file tree-view      |                 |
 | [ ]         | Git Intergration            |                 |
@@ -15,5 +15,7 @@
 
 ### LSP Enabled:
 - Typescript
-- Javascript
+- JavaScript
 - HTML
+
+Some random word that should be marked
